@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Real-Time CO2 Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #121212; color: #e0e0e0; }
+    h1 { color: #ffffff; font-size: 24px; }
+    p { font-size: 24px; color: #e0e0e0; }
+    #co2 { color: #ff0000; border: 2px solid #ff0000; padding: 10px; display: inline-block; margin-top: 20px; }
+    #temp { color: #00b0ff; border: 2px solid #00b0ff; padding: 10px; display: inline-block; margin-top: 20px; }
+    .chart-container { position: relative; width: 100%; max-width: 600px; margin: auto; overflow-x: auto; }
+    canvas { margin-top: 20px; width: 100%; height: auto; border: 2px solid #e0e0e0; }
+  </style>
+</head>
+<body>
+  <h1>Real-Time CO2 Detection</h1>
+  <p id="co2">CO2: -- ppm</p>
+  <p id="temp">Temp: -- °C</p>
+  <div class="chart-container">
+    <canvas id="co2Chart" width="400" height="200"></canvas>
+  </div>
+  <script type="module" src="public/main.js"></script>
+  <script src="bundle.js" type="module"></script>
+
+
+
+</body>
+</html>
